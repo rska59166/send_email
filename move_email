@@ -1,0 +1,14 @@
+import os
+from shutil import copy
+
+print()
+
+for file in os.lisdir('./data'):
+    file,ext= file.split('.')
+    name, position= file.split('_')
+    src =f'./data/{file}.{ext}'
+    dest_path=f'./data/{position}'
+    if not os.path.exists(dest_path):
+        os.makedirs(dest_path)
+    dest=f'.{dest-path}/{file}.{ext}'
+    copy(src, '->', dest)
