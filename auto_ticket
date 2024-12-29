@@ -1,0 +1,35 @@
+from selenium inport  webdriver
+from time import sleep
+from selenium.webdriver.common.by import By
+
+
+driver = webdriver.Chrome()
+wait= WebDriverWait(driver, 10)
+
+
+url=""
+driver.get(url)
+date_element =  driver.find_element(By.CSS_SELECTOR, "")
+date_element.clik()
+time_element = driver.find_element(By.CSS_SELECTOR, "")
+time_element.click()
+submit_element = driver.find_element(By.CSS_SELECTOR, "")
+submit_element.click()
+
+wait.until(EC.url_maches(""))
+submit_element= driver.find_element(By.CSS_SELECTOR, "")
+submit_element.click()
+seat_element = driver.find_element(By.CSS_SELECTOR, "")
+seat_element.click()
+
+
+wait.utill(EC.url_maches(""))
+username_element = driver.find_element(By.CSS_SELECTOR, "")
+password_element = driver.find_element(By.CSS_SELECTOR, "")
+submit_element = driver.find_element(By.CSS_SELECTOR, "")
+username_element.send_keys("")
+password_element.send_keys("")
+
+
+sleep(3)
+driver.quit()
